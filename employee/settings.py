@@ -71,11 +71,21 @@ WSGI_APPLICATION = 'employee.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'aa',
+		'OPTIONS': {
+            # Support full Unicode in MySQL databases by using utf8mb4 instead
+            # of utf8. Fixes: OperationalError: (1366, "Incorrect string value:
+            # ...").
+            'charset': 'utf8mb4',
+        },
+        'USER': 'root',
+        'PASSWORD': '',
+        'HOST': 'localhost',
+        'PORT': '3306',
 
     }
+
 }
 
 
