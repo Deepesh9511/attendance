@@ -71,16 +71,16 @@ WSGI_APPLICATION = 'employee.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'd6ib7i9gf4cfcq',
+        'USER': 'doagsspmkcfmfp',
+        'PASSWORD': 'ca32b8df44033b74fda0beee8910be1face2d42ee3168e87994140d724ce4a6b',
+        'HOST': 'ec2-52-0-174-248.compute-1.amazonaws.com',
+        'PORT': '5432',
     }
 
 }
 
-import dj_database_url
-db_from_env = dj_database_url.config(conn_max_age=600)
-DATABASES['default'].update(db_from_env)
 
 
 # Password validation
