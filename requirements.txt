@@ -40,8 +40,8 @@ platformdirs==2.4.0
 plotly==5.4.0
 product==0.1.1.1
 protobuf==3.12.2
-psycopg2==2.9.2
-psycopg2-binary==2.9.2
+psycopg2==2.8.6
+psycopg2-binary==2.8.6
 pycodestyle==2.5.0
 pydot==1.4.1
 pyparsing==2.4.7
